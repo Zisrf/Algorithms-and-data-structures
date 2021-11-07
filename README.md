@@ -1,4 +1,4 @@
-## My laboratory works on algorithms and data structuresх at [ITMO University](https://itmo.ru)
+## My laboratory works on algorithms and DS at [ITMO University](https://itmo.ru)
 ### Semester 1
 * [Basic DP, bubble sort](1sem/1lab)
 * [Quick sort, merge sort](1sem/2lab)
