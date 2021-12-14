@@ -1,4 +1,11 @@
 ## My laboratory works on algorithms and DS at [ITMO University](https://itmo.ru)
+### Semester 2
+* 
+* 
+* 
+* 
+* 
+* 
 ### Semester 1
 * [Basic DP, bubble sort](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/1sem/1lab)
 * [Quick sort, merge sort](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/1sem/2lab)
@@ -7,10 +14,3 @@
 * [Hash table, unordered set, unordered map](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/1sem/5lab)
 * [Unbalanced binary search tree](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/1sem/6lab)
 * [AVL tree](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/1sem/7lab)
-### Semester 2
-* 
-* 
-* 
-* 
-* 
-* 
