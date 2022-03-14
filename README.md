@@ -4,8 +4,8 @@
 * Streams algorithm
 * Dijkstra's and Floyd's algorithms
 * Minimum spanning trees
-* DFS, topological sort
-* [Graph storage, BFS](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/1sem/8lab)
+* [DFS, topological sort](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/2lab)
+* [Graph storage, BFS](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/1lab)
 ### Semester 1
 * [AVL tree](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/1sem/7lab)
 * [Unbalanced binary search tree](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/1sem/6lab)
