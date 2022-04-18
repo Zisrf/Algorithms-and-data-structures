@@ -47,12 +47,12 @@ struct Stack
 
 int main()
 {
-    ifstream cin("postfix.in");
-    ofstream cout("postfix.out");
+    ifstream fin("postfix.in");
+    ofstream fout("postfix.out");
 
     Stack st(sizeof(int));
     char c;
-    while (cin >> c)
+    while (fin >> c)
     {
         if (c == '+')
         {
@@ -82,7 +82,7 @@ int main()
         }
     }
 
-    cout << *((int *)st.top()) << endl;
+    fout << *((int *)st.top()) << endl;
 
     free(st.arr);
     return 0;

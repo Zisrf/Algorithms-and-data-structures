@@ -13,18 +13,18 @@ void dfs(int u, vector<vector<int>> &g, vector<int> &color, int curColor)
  
 int main()
 {
-    ifstream cin("components.in");
-    ofstream cout("components.out");
+    ifstream fin("components.in");
+    ofstream fout("components.out");
  
     int n, m;
-    cin >> n >> m;
+    fin >> n >> m;
  
     vector<vector<int>> g(n);
     vector<int> color(n);
     for (int i = 0; i < m; ++i)
     {
         int u, v;
-        cin >> u >> v;
+        fin >> u >> v;
         --u;
         --v;
         g[u].push_back(v);
@@ -36,10 +36,10 @@ int main()
         if (color[i] == 0)
             dfs(i, g, color, curColor++);
  
-    cout << curColor - 1 << endl;
+    fout << curColor - 1 << endl;
     for (int i = 0; i < n; ++i)
-        cout << color[i] << ' ';
-    cout << endl;
+        fout << color[i] << ' ';
+    fout << endl;
     
     return 0;
 }

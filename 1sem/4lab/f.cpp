@@ -21,13 +21,13 @@ bool isGood(double A, double A1, vector<double> &h)
 
 int main()
 {
-    ifstream cin("garland.in");
-    ofstream cout("garland.out");
-    cout.precision(16);
+    ifstream fin("garland.in");
+    ofstream fout("garland.out");
+    fout.precision(16);
 
     int n;
     double A;
-    cin >> n >> A;
+    fin >> n >> A;
 
     vector<double> h(n);
     double l = 0;
@@ -42,7 +42,7 @@ int main()
     }
 
     isGood(A, r, h);
-    cout << h[n - 1] << endl;
+    fout << h[n - 1] << endl;
 
     return 0;
 }

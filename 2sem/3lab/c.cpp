@@ -8,16 +8,16 @@ const int INF = 2e9 + 11;
  
 int main()
 {
-    ifstream cin("spantree3.in");
-    ofstream cout("spantree3.out");
+    ifstream fin("spantree3.in");
+    ofstream fout("spantree3.out");
  
     int n, m;
-    cin >> n >> m;
+    fin >> n >> m;
     vector<vector<pair<int, int>>> g(n);
     for (int i = 0; i < m; ++i)
     {
         int u, v, w;
-        cin >> u >> v >> w;
+        fin >> u >> v >> w;
         --u;
         --v;
         g[u].push_back({v, w});
@@ -46,7 +46,7 @@ int main()
             }
     }
  
-    cout << ans << endl;
+    fout << ans << endl;
  
     return 0;
 }

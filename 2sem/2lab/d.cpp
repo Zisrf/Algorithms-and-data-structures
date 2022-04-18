@@ -4,8 +4,8 @@
 
 using namespace std;
 
-ifstream cin("cond.in");
-ofstream cout("cond.out");
+ifstream fin("cond.in");
+ofstream fout("cond.out");
 
 void topSort(int u, const vector<vector<int>> &g, vector<bool> &visited, vector<int> &ans)
 {
@@ -27,13 +27,13 @@ void dfs(int u, const vector<vector<int>> &g, vector<int> &color, int curColor)
 int main()
 {
     int n, m;
-    cin >> n >> m;
+    fin >> n >> m;
     vector<vector<int>> g(n);
     vector<vector<int>> rg(n);
     for (int i = 0; i < m; ++i)
     {
         int u, v;
-        cin >> u >> v;
+        fin >> u >> v;
         g[u - 1].push_back(v - 1);
         rg[v - 1].push_back(u - 1);
     }
@@ -54,10 +54,10 @@ int main()
             ++curColor;
         }
 
-    cout << curColor - 1 << endl;
+    fout << curColor - 1 << endl;
     for (int i = 0; i < n; ++i)
-        cout << color[i] << ' ';
-    cout << endl;
+        fout << color[i] << ' ';
+    fout << endl;
 
     return 0;
 }

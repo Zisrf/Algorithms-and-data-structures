@@ -150,13 +150,13 @@ int next(node *root, int v)
 
 int main()
 {
-    ifstream cin("bstsimple.in");
-    ofstream cout("bstsimple.out");
+    ifstream fin("bstsimple.in");
+    ofstream fout("bstsimple.out");
 
     node *root = nullptr;
     string command;
     int arg;
-    while (cin >> command >> arg)
+    while (fin >> command >> arg)
     {
         if (command == "insert")
         {
@@ -171,25 +171,25 @@ int main()
         else if (command == "exists")
         {
             if (exists(root, arg))
-                cout << "true" << endl;
+                fout << "true" << endl;
             else
-                cout << "false" << endl;
+                fout << "false" << endl;
         }
         else if (command == "prev")
         {
             int ans = prev(root, arg);
             if (ans == INF)
-                cout << "none" << endl;
+                fout << "none" << endl;
             else
-                cout << ans << endl;
+                fout << ans << endl;
         }
         else if (command == "next")
         {
             int ans = next(root, arg);
             if (ans == INF)
-                cout << "none" << endl;
+                fout << "none" << endl;
             else
-                cout << ans << endl;
+                fout << ans << endl;
         }
     }
 

@@ -42,21 +42,21 @@ int lastIn(const vector<int> &a, int k)
 
 int main()
 {
-    ifstream cin("binsearch.in");
-    ofstream cout("binsearch.out");
+    ifstream fin("binsearch.in");
+    ofstream fout("binsearch.out");
 
     int n;
-    cin >> n;
+    fin >> n;
     vector<int> a(n);
     for (int i = 0; i < n; ++i)
-        cin >> a[i];
+        fin >> a[i];
 
     int m, k;
-    cin >> m;
+    fin >> m;
     for (int i = 0; i < m; ++i)
     {
-        cin >> k;
-        cout << firstIn(a, k) + 1 << ' ' << lastIn(a, k) + 1 << endl;
+        fin >> k;
+        fout << firstIn(a, k) + 1 << ' ' << lastIn(a, k) + 1 << endl;
     }
 
     return 0;

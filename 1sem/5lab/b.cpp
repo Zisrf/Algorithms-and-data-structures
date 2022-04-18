@@ -63,27 +63,27 @@ struct Map
  
 int main()
 {
-    ifstream cin("map.in");
-    ofstream cout("map.out");
+    ifstream fin("map.in");
+    ofstream fout("map.out");
  
     string cmd, key, value;
     Map m;
-    while (cin >> cmd)
+    while (fin >> cmd)
     {
         if (cmd == "put")
         {
-            cin >> key >> value;
+            fin >> key >> value;
             m.insert(key, value);
         }
         else if (cmd == "delete")
         {
-            cin >> key;
+            fin >> key;
             m.erase(key);
         }
         else
         {
-            cin >> key;
-            cout << m.get(key) << endl;
+            fin >> key;
+            fout << m.get(key) << endl;
         }
     }
 

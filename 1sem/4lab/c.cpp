@@ -52,12 +52,12 @@ struct Stack
 
 int main()
 {
-    ifstream cin("brackets.in");
-    ofstream cout("brackets.out");
+    ifstream fin("brackets.in");
+    ofstream fout("brackets.out");
 
     Stack st;
     string s;
-    while (cin >> s)
+    while (fin >> s)
     {
         st = Stack(sizeof(char));
         for (auto c : s)
@@ -66,9 +66,9 @@ int main()
             else
                 st.push(&c);
         if (st.Size() == 0)
-            cout << "YES" << endl;
+            fout << "YES" << endl;
         else
-            cout << "NO" << endl;
+            fout << "NO" << endl;
         free(st.arr);
     }
 

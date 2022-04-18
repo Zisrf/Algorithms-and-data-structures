@@ -16,11 +16,11 @@ void dfs(int u, const vector<vector<int>> &g, vector<bool> &onNegativeCycle)
  
 int main()
 {
-    ifstream cin("path.in");
-    ofstream cout("path.out");
+    ifstream fin("path.in");
+    ofstream fout("path.out");
  
     int n, m, s;
-    cin >> n >> m >> s;
+    fin >> n >> m >> s;
     --s;
     vector<pair<pair<int, int>, long long>> R;
     vector<vector<int>> g(n);
@@ -28,7 +28,7 @@ int main()
     {
         int u, v;
         long long w;
-        cin >> u >> v >> w;
+        fin >> u >> v >> w;
         --u;
         --v;
         R.push_back({{u, v}, w});
@@ -64,11 +64,11 @@ int main()
  
     for (int i = 0; i < n; ++i)
         if (onNegativeCycle[i])
-            cout << '-' << endl;
+            fout << '-' << endl;
         else if (dist[i] == INF)
-            cout << '*' << endl;
+            fout << '*' << endl;
         else
-            cout << dist[i] << endl;
+            fout << dist[i] << endl;
  
     return 0;
 }

@@ -8,16 +8,16 @@ const int INF = 2e9 + 11;
  
 int main()
 {
-    ifstream cin("pathbgep.in");
-    ofstream cout("pathbgep.out");
+    ifstream fin("pathbgep.in");
+    ofstream fout("pathbgep.out");
  
     int n, m;
-    cin >> n >> m;
+    fin >> n >> m;
     vector<vector<pair<int, int>>> g(n);
     for (int i = 0; i < m; ++i)
     {
         int u, v, w;
-        cin >> u >> v >> w;
+        fin >> u >> v >> w;
         --u;
         --v;
         g[u].push_back({v, w});
@@ -44,8 +44,8 @@ int main()
     }
  
     for (int i = 0; i < n; ++i)
-        cout << dist[i] << ' ';
-    cout << endl;
+        fout << dist[i] << ' ';
+    fout << endl;
  
     return 0;
 }

@@ -22,25 +22,25 @@ bool dfs(int u, const vector<vector<int>> &g, int parent = -1)
 
 int main()
 {
-    ifstream cin("game.in");
-    ofstream cout("game.out");
+    ifstream fin("game.in");
+    ofstream fout("game.out");
 
     int n, m, start;
-    cin >> n >> m >> start;
+    fin >> n >> m >> start;
     --start;
     dp.resize(n, -1);
     vector<vector<int>> g(n);
     for (int i = 0; i < m; ++i)
     {
         int u, v;
-        cin >> u >> v;
+        fin >> u >> v;
         g[u - 1].push_back(v - 1);
     }
 
     if (dfs(start, g))
-        cout << "First player wins" << endl;
+        fout << "First player wins" << endl;
     else
-        cout << "Second player wins" << endl;
+        fout << "Second player wins" << endl;
 
     return 0;
 }

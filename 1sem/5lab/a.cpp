@@ -52,13 +52,13 @@ struct Set
  
 int main()
 {
-    ifstream cin("set.in");
-    ofstream cout("set.out");
+    ifstream fin("set.in");
+    ofstream fout("set.out");
  
     Set s;
     string cmd;
     int x;
-    while (cin >> cmd >> x)
+    while (fin >> cmd >> x)
     {
         if (cmd == "insert")
         {
@@ -71,9 +71,9 @@ int main()
         else
         {
             if (s.exists(x))
-                cout << "true" << endl;
+                fout << "true" << endl;
             else
-                cout << "false" << endl;
+                fout << "false" << endl;
         }
     }
  

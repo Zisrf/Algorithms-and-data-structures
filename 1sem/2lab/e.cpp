@@ -31,13 +31,13 @@ int QSort(vector<int> &a, int l, int r, int k)
 
 int main()
 {
-    ifstream cin("kth.in");
-    ofstream cout("kth.out");
+    ifstream fin("kth.in");
+    ofstream fout("kth.out");
 
     int n, k;
     int A, B, C, a0, a1;
-    cin >> n >> k;
-    cin >> A >> B >> C >> a0 >> a1;
+    fin >> n >> k;
+    fin >> A >> B >> C >> a0 >> a1;
     vector<int> a(n);
     if (n > 0)
         a[0] = a0;
@@ -46,7 +46,7 @@ int main()
     for (int i = 2; i < n; ++i)
         a[i] = A * a[i - 2] + B * a[i - 1] + C;
 
-    cout << QSort(a, 0, n - 1, k - 1) << endl;
+    fout << QSort(a, 0, n - 1, k - 1) << endl;
 
     return 0;
 }

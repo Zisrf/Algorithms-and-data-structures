@@ -44,20 +44,20 @@ void mergeSort(vector<int> &a)
 
 int main()
 {
-    ifstream cin("sort.in");
-    ofstream cout("sort.out");
+    ifstream fin("sort.in");
+    ofstream fout("sort.out");
 
     int n;
-    cin >> n;
+    fin >> n;
     vector<int> a(n);
     for (int i = 0; i < n; ++i)
-        cin >> a[i];
+        fin >> a[i];
 
     mergeSort(a);
 
     for (int i = 0; i < n; ++i)
-        cout << a[i] << ' ';
-    cout << '\n';
+        fout << a[i] << ' ';
+    fout << '\n';
 
     return 0;
 }

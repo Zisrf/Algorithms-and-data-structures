@@ -4,8 +4,8 @@
 
 using namespace std;
 
-ifstream cin("topsort.in");
-ofstream cout("topsort.out");
+ifstream fin("topsort.in");
+ofstream fout("topsort.out");
 
 void dfs(int u, const vector<vector<int>> &g, vector<int> &color, int parent = -1)
 {
@@ -13,7 +13,7 @@ void dfs(int u, const vector<vector<int>> &g, vector<int> &color, int parent = -
     for (auto v : g[u])
         if (color[v] == 1 && v != parent)
         {
-            cout << -1 << endl;
+            fout << -1 << endl;
             exit(0);
         }
         else if (color[v] == 0)
@@ -35,12 +35,12 @@ void topSort(int u, const vector<vector<int>> &g, vector<bool> &visited, vector<
 int main()
 {
     int n, m;
-    cin >> n >> m;
+    fin >> n >> m;
     vector<vector<int>> g(n);
     for (int i = 0; i < m; ++i)
     {
         int u, v;
-        cin >> u >> v;
+        fin >> u >> v;
         g[u - 1].push_back(v - 1);
     }
 
@@ -57,8 +57,8 @@ int main()
     reverse(ans.begin(), ans.end());
 
     for (int i = 0; i < n; ++i)
-        cout << ans[i] + 1 << ' ';
-    cout << endl;
+        fout << ans[i] + 1 << ' ';
+    fout << endl;
 
     return 0;
 }

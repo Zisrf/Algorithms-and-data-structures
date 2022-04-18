@@ -37,24 +37,24 @@ struct Stack
 
 int main()
 {
-    ifstream cin("stack.in");
-    ofstream cout("stack.out");
+    ifstream fin("stack.in");
+    ofstream fout("stack.out");
 
     Stack st(sizeof(int));
     char mode;
     int n, elem;
-    cin >> n;
+    fin >> n;
     for (int i = 0; i < n; ++i)
     {
-        cin >> mode;
+        fin >> mode;
         if (mode == '+')
         {
-            cin >> elem;
+            fin >> elem;
             st.push(&elem);
         }
         else
         {
-            cout << *((int *)st.pop()) << endl;
+            fout << *((int *)st.pop()) << endl;
         }
     }
 

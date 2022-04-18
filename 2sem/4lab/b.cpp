@@ -7,16 +7,16 @@ const int INF = 2e9 + 11;
  
 int main()
 {
-    ifstream cin("pathsg.in");
-    ofstream cout("pathsg.out");
+    ifstream fin("pathsg.in");
+    ofstream fout("pathsg.out");
  
     int n, m;
-    cin >> n >> m;
+    fin >> n >> m;
     vector<vector<long long>> g(n, vector<long long>(n, INF));
     for (int i = 0; i < m; ++i)
     {
         int u, v, w;
-        cin >> u >> v >> w;
+        fin >> u >> v >> w;
         --u;
         --v;
         g[u][v] = w;
@@ -33,8 +33,8 @@ int main()
     for (int i = 0; i < n; ++i)
     {
         for (int j = 0; j < n; ++j)
-            cout << g[i][j] << ' ';
-        cout << endl;
+            fout << g[i][j] << ' ';
+        fout << endl;
     }
  
     return 0;

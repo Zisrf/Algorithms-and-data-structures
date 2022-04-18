@@ -25,19 +25,19 @@ void radixSort(vector<string> &s, int k)
 
 int main()
 {
-    ifstream cin("radixsort.in");
-    ofstream cout("radixsort.out");
+    ifstream fin("radixsort.in");
+    ofstream fout("radixsort.out");
 
     int n, m, k;
-    cin >> n >> m >> k;
+    fin >> n >> m >> k;
     vector<string> s(n);
     for (int i = 0; i < n; ++i)
-        cin >> s[i];
+        fin >> s[i];
 
     radixSort(s, k);
 
     for (int i = 0; i < n; ++i)
-        cout << s[i] << endl;
+        fout << s[i] << endl;
 
     return 0;
 }

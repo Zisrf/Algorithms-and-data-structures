@@ -13,15 +13,15 @@ double dist(int x1, int y1, int x2, int y2)
  
 int main()
 {
-    ifstream cin("spantree.in");
-    ofstream cout("spantree.out");
+    ifstream fin("spantree.in");
+    ofstream fout("spantree.out");
  
     int n;
-    cin >> n;
+    fin >> n;
     vector<int> x(n);
     vector<int> y(n);
     for (int i = 0; i < n; ++i)
-        cin >> x[i] >> y[i];
+        fin >> x[i] >> y[i];
  
     double ans = 0;
     vector<bool> used(n);
@@ -41,7 +41,7 @@ int main()
                 d[v] = dist(x[u], y[u], x[v], y[v]);
     }
  
-    cout << fixed << setprecision(3) << ans << endl;
+    fout << fixed << setprecision(3) << ans << endl;
  
     return 0;
 }

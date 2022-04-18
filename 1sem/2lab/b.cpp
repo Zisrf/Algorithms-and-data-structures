@@ -48,14 +48,14 @@ void mergeSort(vector<Member> &a)
 
 int main()
 {
-    ifstream cin("race.in");
-    ofstream cout("race.out");
+    ifstream fin("race.in");
+    ofstream fout("race.out");
 
     int n;
-    cin >> n;
+    fin >> n;
     vector<Member> members(n);
     for (int i = 0; i < n; ++i)
-        cin >> members[i].country >> members[i].name;
+        fin >> members[i].country >> members[i].name;
 
     mergeSort(members);
 
@@ -64,10 +64,10 @@ int main()
     {
         if (members[i].country != curCountry)
         {
-            cout << "=== " << members[i].country << " ===\n";
+            fout << "=== " << members[i].country << " ===\n";
             curCountry = members[i].country;
         }
-        cout << members[i].name << '\n';
+        fout << members[i].name << '\n';
     }
 
     return 0;

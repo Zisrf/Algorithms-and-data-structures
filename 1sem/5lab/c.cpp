@@ -104,37 +104,37 @@ struct LinkedMap
  
 int main()
 {
-    ifstream cin("linkedmap.in");
-    ofstream cout("linkedmap.out");
+    ifstream fin("linkedmap.in");
+    ofstream fout("linkedmap.out");
  
     string cmd, key, value;
     LinkedMap m;
-    while (cin >> cmd)
+    while (fin >> cmd)
     {
         if (cmd == "put")
         {
-            cin >> key >> value;
+            fin >> key >> value;
             m.insert(key, value);
         }
         else if (cmd == "delete")
         {
-            cin >> key;
+            fin >> key;
             m.erase(key);
         }
         else if (cmd == "get")
         {
-            cin >> key;
-            cout << m.get(key) << endl;
+            fin >> key;
+            fout << m.get(key) << endl;
         }
         else if (cmd == "prev")
         {
-            cin >> key;
-            cout << m.prev(key) << endl;
+            fin >> key;
+            fout << m.prev(key) << endl;
         }
         else
         {
-            cin >> key;
-            cout << m.next(key) << endl;
+            fin >> key;
+            fout << m.next(key) << endl;
         }
     }
 

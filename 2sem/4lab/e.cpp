@@ -8,17 +8,17 @@ const int INF = 1e9;
  
 int main()
 {
-    ifstream cin("negcycle.in");
-    ofstream cout("negcycle.out");
+    ifstream fin("negcycle.in");
+    ofstream fout("negcycle.out");
  
     int n;
-    cin >> n;
+    fin >> n;
     vector<pair<pair<int, int>, int>> e;
     for (int i = 0; i < n; ++i)
         for (int j = 0; j < n; ++j)
         {
             int w;
-            cin >> w;
+            fin >> w;
             if (w != INF)
                 e.push_back({{i, j}, w});
         }
@@ -46,7 +46,7 @@ int main()
  
     if (x == -1)
     {
-        cout << "NO" << std::endl;
+        fout << "NO" << std::endl;
         return 0;
     }
  
@@ -62,11 +62,11 @@ int main()
     }
     reverse(path.begin(), path.end());
  
-    cout << "YES" << std::endl;
-    cout << path.size() << std::endl;
+    fout << "YES" << std::endl;
+    fout << path.size() << std::endl;
     for (size_t i = 0; i < path.size(); ++i)
-        cout << path[i] + 1 << ' ';
-    cout << std::endl;
+        fout << path[i] + 1 << ' ';
+    fout << std::endl;
  
     return 0;
 }

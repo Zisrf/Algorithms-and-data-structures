@@ -70,24 +70,24 @@ struct Queue
 
 int main()
 {
-    ifstream cin("queue.in");
-    ofstream cout("queue.out");
+    ifstream fin("queue.in");
+    ofstream fout("queue.out");
 
     Queue q;
     char mode;
     int n, val;
-    cin >> n;
+    fin >> n;
     for (int i = 0; i < n; ++i)
     {
-        cin >> mode;
+        fin >> mode;
         if (mode == '+')
         {
-            cin >> val;
+            fin >> val;
             q.push(val);
         }
         else
         {
-            cout << q.pop() << endl;
+            fout << q.pop() << endl;
         }
     }
 

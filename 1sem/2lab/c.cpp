@@ -59,18 +59,18 @@ void mergeSort(vector<int> &a)
 
 int main()
 {
-    ifstream cin("inversions.in");
-    ofstream cout("inversions.out");
+    ifstream fin("inversions.in");
+    ofstream fout("inversions.out");
 
     int n;
-    cin >> n;
+    fin >> n;
     vector<int> a(n);
     for (int i = 0; i < n; ++i)
-        cin >> a[i];
+        fin >> a[i];
 
     mergeSort(a);
 
-    cout << ans << endl;
+    fout << ans << endl;
 
     return 0;
 }

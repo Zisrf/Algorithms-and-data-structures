@@ -82,18 +82,18 @@ struct PrQueue
 
 int main()
 {
-    ifstream cin("priorityqueue.in");
-    ofstream cout("priorityqueue.out");
+    ifstream fin("priorityqueue.in");
+    ofstream fout("priorityqueue.out");
 
     PrQueue pq;
     vector<int> arrayThatContainsHistoryOfOperationsWithHeap;
     string mode;
-    while (cin >> mode)
+    while (fin >> mode)
     {
         if (mode == "push")
         {
             int x;
-            cin >> x;
+            fin >> x;
             pq.push(x);
             arrayThatContainsHistoryOfOperationsWithHeap.push_back(x);
         }
@@ -101,15 +101,15 @@ int main()
         {
             int ans = pq.extractMin();
             if (ans == INF)
-                cout << '*' << endl;
+                fout << '*' << endl;
             else
-                cout << ans << endl;
+                fout << ans << endl;
             arrayThatContainsHistoryOfOperationsWithHeap.push_back(INF);
         }
         else if (mode == "decrease-key")
         {
             int x, y;
-            cin >> x >> y;
+            fin >> x >> y;
             pq.decreaseKey(pq.find(arrayThatContainsHistoryOfOperationsWithHeap[x - 1]), y);
             arrayThatContainsHistoryOfOperationsWithHeap[x - 1] = y;
             arrayThatContainsHistoryOfOperationsWithHeap.push_back(INF);

@@ -7,11 +7,11 @@ using namespace std;
 
 int main()
 {
-    ifstream cin("antiqs.in");
-    ofstream cout("antiqs.out");
+    ifstream fin("antiqs.in");
+    ofstream fout("antiqs.out");
 
     int n;
-    cin >> n;
+    fin >> n;
     vector<int> a(n);
     for (int i = 0; i < n; ++i)
         a[i] = i + 1;
@@ -20,8 +20,8 @@ int main()
         swap(a[i], a[i / 2]);
 
     for (int i = 0; i < n; ++i)
-        cout << a[i] << ' ';
-    cout << endl;
+        fout << a[i] << ' ';
+    fout << endl;
 
     return 0;
 }

@@ -14,25 +14,25 @@ bool isDirected(int n, vector<vector<bool>> &g)
  
 int main()
 {
-    ifstream cin("input.txt");
-    ofstream cout("output.txt");
+    ifstream fin("input.txt");
+    ofstream fout("output.txt");
  
     int n;
-    cin >> n;
+    fin >> n;
  
     vector<vector<bool>> g(n, vector<bool>(n));
     for (int i = 0; i < n; ++i)
         for (int j = 0; j < n; ++j)
         {
             bool buf;
-            cin >> buf;
+            fin >> buf;
             g[i][j] = buf;
         }
  
     if (!isDirected(n, g))
-        cout << "YES" << endl;
+        fout << "YES" << endl;
     else
-        cout << "NO" << endl;
+        fout << "NO" << endl;
         
     return 0;
 }

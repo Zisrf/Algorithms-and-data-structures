@@ -7,17 +7,17 @@ const long long INF = 1e18;
  
 int main()
 {
-    ifstream cin("pathmgep.in");
-    ofstream cout("pathmgep.out");
+    ifstream fin("pathmgep.in");
+    ofstream fout("pathmgep.out");
  
     int n, s, f;
-    cin >> n >> s >> f;
+    fin >> n >> s >> f;
     --s;
     --f;
     vector<vector<int>> g(n, vector<int>(n));
     for (int i = 0; i < n; ++i)
         for (int j = 0; j < n; ++j)
-            cin >> g[i][j];
+            fin >> g[i][j];
  
     vector<long long> dist(n, INF);
     vector<bool> used(n);
@@ -38,9 +38,9 @@ int main()
     }
  
     if (dist[f] != INF)
-        cout << dist[f] << endl;
+        fout << dist[f] << endl;
     else
-        cout << -1 << endl;
+        fout << -1 << endl;
  
     return 0;
 }

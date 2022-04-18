@@ -12,8 +12,8 @@ map<string, int> index;
 
 int main()
 {
-    ifstream cin("quack.in");
-    ofstream cout("quack.out");
+    ifstream fin("quack.in");
+    ofstream fout("quack.out");
 
     queue<unsigned short> q;
     vector<unsigned short> r(26);
@@ -21,7 +21,7 @@ int main()
     vector<string> comand;
     string cmd;
     int i = 0;
-    while (cin >> cmd)
+    while (fin >> cmd)
     {
         if (cmd[0] == ':')
             index[cmd.substr(1, cmd.size() - 1)] = i;
@@ -86,23 +86,23 @@ int main()
         case 'P':
             if (cmd.size() == 1)
             {
-                cout << q.front() << endl;
+                fout << q.front() << endl;
                 q.pop();
             }
             else
             {
-                cout << r[cmd[1] - 'a'] << endl;
+                fout << r[cmd[1] - 'a'] << endl;
             }
             break;
         case 'C':
             if (cmd.size() == 1)
             {
-                cout << (char)(q.front() % 256);
+                fout << (char)(q.front() % 256);
                 q.pop();
             }
             else
             {
-                cout << (char)(r[cmd[1] - 'a'] % 256);
+                fout << (char)(r[cmd[1] - 'a'] % 256);
             }
             break;
         case ':':
@@ -132,8 +132,8 @@ int main()
             }
             break;
         case 'Q':
-            cin.close();
-            cout.close();
+            fin.close();
+            fout.close();
             return 0;
         default:
             q.push(atoi(cmd.data()));

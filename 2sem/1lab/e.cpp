@@ -8,17 +8,17 @@ const int INF = 2e9 + 11;
  
 int main()
 {
-    ifstream cin("pathbge1.in");
-    ofstream cout("pathbge1.out");
+    ifstream fin("pathbge1.in");
+    ofstream fout("pathbge1.out");
  
     int n, m;
-    cin >> n >> m;
+    fin >> n >> m;
  
     vector<vector<int>> g(n);
     for (int i = 0; i < m; ++i)
     {
         int u, v;
-        cin >> u >> v;
+        fin >> u >> v;
         --u;
         --v;
         g[u].push_back(v);
@@ -42,8 +42,8 @@ int main()
     }
  
     for (int i = 0; i < n; ++i)
-        cout << dist[i] << ' ';
-    cout << endl;
+        fout << dist[i] << ' ';
+    fout << endl;
     
     return 0;
 }

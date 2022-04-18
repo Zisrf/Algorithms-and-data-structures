@@ -15,16 +15,16 @@ void topSort(int u, const vector<vector<int>> &g, vector<bool> &visited, vector<
 
 int main()
 {
-    ifstream cin("hamiltonian.in");
-    ofstream cout("hamiltonian.out");
+    ifstream fin("hamiltonian.in");
+    ofstream fout("hamiltonian.out");
 
     int n, m;
-    cin >> n >> m;
+    fin >> n >> m;
     vector<vector<int>> g(n);
     for (int i = 0; i < m; ++i)
     {
         int u, v;
-        cin >> u >> v;
+        fin >> u >> v;
         g[u - 1].push_back(v - 1);
     }
 
@@ -38,11 +38,11 @@ int main()
     for (int i = 0; i < n - 1; ++i)
         if (find(g[ts[i]].begin(), g[ts[i]].end(), ts[i + 1]) == g[ts[i]].end())
         {
-            cout << "NO" << endl;
+            fout << "NO" << endl;
             return 0;
         }
 
-    cout << "YES" << endl;
+    fout << "YES" << endl;
 
     return 0;
 }

@@ -4,8 +4,8 @@
 
 using namespace std;
 
-ifstream cin("bipartite.in");
-ofstream cout("bipartite.out");
+ifstream fin("bipartite.in");
+ofstream fout("bipartite.out");
 
 void dfs(int u, const vector<vector<int>> &g, vector<int> &color, int curColor = 1)
 {
@@ -17,7 +17,7 @@ void dfs(int u, const vector<vector<int>> &g, vector<int> &color, int curColor =
         }
         else if (color[u] == color[v])
         {
-            cout << "NO" << endl;
+            fout << "NO" << endl;
             exit(0);
         }
 }
@@ -25,12 +25,12 @@ void dfs(int u, const vector<vector<int>> &g, vector<int> &color, int curColor =
 int main()
 {
     int n, m;
-    cin >> n >> m;
+    fin >> n >> m;
     vector<vector<int>> g(n);
     for (int i = 0; i < m; ++i)
     {
         int u, v;
-        cin >> u >> v;
+        fin >> u >> v;
         g[u - 1].push_back(v - 1);
         g[v - 1].push_back(u - 1);
     }
@@ -40,7 +40,7 @@ int main()
         if (color[i] == 0)
             dfs(i, g, color);
 
-    cout << "YES" << endl;
+    fout << "YES" << endl;
 
     return 0;
 }

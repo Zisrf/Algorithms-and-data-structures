@@ -40,18 +40,18 @@ bool isCorrect(int i, const vector<int> &k, const vector<int> &l, const vector<i
 
 int main()
 {
-    ifstream cin("check.in");
-    ofstream cout("check.out");
+    ifstream fin("check.in");
+    ofstream fout("check.out");
 
     int n;
-    cin >> n;
+    fin >> n;
     minMem.resize(n, INF);
     maxMem.resize(n, -INF);
     isCorMem.resize(n, -1);
     vector<int> k(n), l(n), r(n);
     for (int i = 0; i < n; ++i)
     {
-        cin >> k[i] >> l[i] >> r[i];
+        fin >> k[i] >> l[i] >> r[i];
         --l[i];
         --r[i];
     }
@@ -65,9 +65,9 @@ int main()
         }
 
     if (isTreeCorrect)
-        cout << "YES" << endl;
+        fout << "YES" << endl;
     else
-        cout << "NO" << endl;
+        fout << "NO" << endl;
 
     return 0;
 }

@@ -16,22 +16,22 @@ int h(int i, const vector<int> &k, const vector<int> &l, const vector<int> &r)
  
 int main()
 {
-    ifstream cin("balance.in");
-    ofstream cout("balance.out");
+    ifstream fin("balance.in");
+    ofstream fout("balance.out");
  
     int n;
-    cin >> n;
+    fin >> n;
     vector<int> k(n), l(n), r(n);
     H.resize(n, -1);
     for (int i = 0; i < n; ++i)
     {
-        cin >> k[i] >> l[i] >> r[i];
+        fin >> k[i] >> l[i] >> r[i];
         --l[i];
         --r[i];
     }
  
     for (int i = 0; i < n; ++i)
-        cout << h(r[i], k, l, r) - h(l[i], k, l, r) << endl;
+        fout << h(r[i], k, l, r) - h(l[i], k, l, r) << endl;
         
     return 0;
 }

@@ -23,23 +23,23 @@ void qSort(vector<pair<double, int>> &nums)
 
 int main()
 {
-    ifstream cin("sortland.in");
-    ofstream cout("sortland.out");
+    ifstream fin("sortland.in");
+    ofstream fout("sortland.out");
 
     int n;
-    cin >> n;
+    fin >> n;
     vector<pair<double, int>> nums(n);
     for (int i = 0; i < n; ++i)
     {
-        cin >> nums[i].first;
+        fin >> nums[i].first;
         nums[i].second = i;
     }
 
     qSort(nums);
 
-    cout << nums[0].second + 1 << ' ';
-    cout << nums[n / 2].second + 1 << ' ';
-    cout << nums[n - 1].second + 1 << endl;
-    
+    fout << nums[0].second + 1 << ' ';
+    fout << nums[n / 2].second + 1 << ' ';
+    fout << nums[n - 1].second + 1 << endl;
+
     return 0;
 }

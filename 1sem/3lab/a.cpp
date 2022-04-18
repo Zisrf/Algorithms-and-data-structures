@@ -14,19 +14,19 @@ bool isHeap(const vector<int> &a)
 
 int main()
 {
-    ifstream cin("isheap.in");
-    ofstream cout("isheap.out");
+    ifstream fin("isheap.in");
+    ofstream fout("isheap.out");
 
     int n;
-    cin >> n;
+    fin >> n;
     vector<int> a(n);
     for (int i = 0; i < n; ++i)
-        cin >> a[i];
+        fin >> a[i];
 
     if (isHeap(a))
-        cout << "YES\n";
+        fout << "YES\n";
     else
-        cout << "NO\n";
+        fout << "NO\n";
 
     return 0;
 }

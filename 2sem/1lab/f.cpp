@@ -10,18 +10,18 @@ const int INF = 2e9 + 11;
  
 int main()
 {
-    ifstream cin("input.txt");
-    ofstream cout("output.txt");
+    ifstream fin("input.txt");
+    ofstream fout("output.txt");
  
     int n, m;
-    cin >> n >> m;
+    fin >> n >> m;
  
     int start, finish;
     vector<vector<char>> map(n, vector<char>(m));
     for (int i = 0; i < n; ++i)
         for (int j = 0; j < m; ++j)
         {
-            cin >> map[i][j];
+            fin >> map[i][j];
             if (map[i][j] == 'S')
                 start = i * m + j;
             else if (map[i][j] == 'T')
@@ -61,11 +61,11 @@ int main()
  
     if (dist[finish] != INF)
     {
-        cout << dist[finish] << endl;
+        fout << dist[finish] << endl;
     }
     else
     {
-        cout << -1 << endl;
+        fout << -1 << endl;
         return 0;
     }
  
@@ -93,7 +93,7 @@ int main()
             cur += 1;
         }
     reverse(ans.begin(), ans.end());
-    cout << ans << endl;
+    fout << ans << endl;
     
     return 0;
 }
