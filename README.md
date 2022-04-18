@@ -2,8 +2,8 @@
 ### Semester 2
 * Hashing, prefix function, Knuth-Morris-Pratt automaton
 * Streams algorithm
-* Dijkstra's and Floyd's algorithms
-* Minimum spanning trees
+* [Dijkstra's, Floyd's and Ford-Bellman's algorithms](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/4lab)
+* [Minimum spanning trees](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/3lab)
 * [DFS, topological sort](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/2lab)
 * [Graph storage, BFS](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/1lab)
 ### Semester 1
