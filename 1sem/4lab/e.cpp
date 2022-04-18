@@ -59,7 +59,5 @@ int main()
         cout << firstIn(a, k) + 1 << ' ' << lastIn(a, k) + 1 << endl;
     }
 
-    cin.close();
-    cout.close();
     return 0;
 }

@@ -39,7 +39,5 @@ int main()
     for (int i = 0; i < n; ++i)
         cout << s[i] << endl;
 
-    cin.close();
-    cout.close();
     return 0;
 }

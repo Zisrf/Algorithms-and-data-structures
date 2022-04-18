@@ -44,8 +44,6 @@ int main()
     for (int i = 0; i < n; ++i)
         cout << dist[i] << ' ';
     cout << endl;
- 
-    cin.close();
-    cout.close();
+    
     return 0;
 }

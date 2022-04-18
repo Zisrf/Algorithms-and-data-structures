@@ -86,8 +86,6 @@ int main()
             cout << m.get(key) << endl;
         }
     }
- 
-    cin.close();
-    cout.close();
+
     return 0;
 }

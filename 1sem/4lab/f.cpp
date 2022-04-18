@@ -44,7 +44,5 @@ int main()
     isGood(A, r, h);
     cout << h[n - 1] << endl;
 
-    cin.close();
-    cout.close();
     return 0;
 }

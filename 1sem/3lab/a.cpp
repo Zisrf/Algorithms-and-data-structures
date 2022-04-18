@@ -28,7 +28,5 @@ int main()
     else
         cout << "NO\n";
 
-    cin.close();
-    cout.close();
     return 0;
 }

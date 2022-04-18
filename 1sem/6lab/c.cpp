@@ -194,7 +194,5 @@ int main()
     }
 
     delete root;
-    cin.close();
-    cout.close();
     return 0;
 }

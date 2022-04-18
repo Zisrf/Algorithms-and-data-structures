@@ -72,7 +72,5 @@ int main()
 
     cout << ans << endl;
 
-    cin.close();
-    cout.close();
     return 0;
 }

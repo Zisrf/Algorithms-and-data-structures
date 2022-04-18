@@ -48,7 +48,5 @@ int main()
 
     cout << QSort(a, 0, n - 1, k - 1) << endl;
 
-    cin.close();
-    cout.close();
     return 0;
 }

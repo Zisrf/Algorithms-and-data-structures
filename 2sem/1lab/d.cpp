@@ -40,8 +40,6 @@ int main()
     for (int i = 0; i < n; ++i)
         cout << color[i] << ' ';
     cout << endl;
- 
-    cin.close();
-    cout.close();
+    
     return 0;
 }

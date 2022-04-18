@@ -85,7 +85,5 @@ int main()
     cout << *((int *)st.top()) << endl;
 
     free(st.arr);
-    cin.close();
-    cout.close();
     return 0;
 }

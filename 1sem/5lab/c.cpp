@@ -137,8 +137,6 @@ int main()
             cout << m.next(key) << endl;
         }
     }
- 
-    cin.close();
-    cout.close();
+
     return 0;
 }

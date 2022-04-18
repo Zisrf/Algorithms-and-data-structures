@@ -59,7 +59,5 @@ int main()
         cout << a[i] << ' ';
     cout << '\n';
 
-    cin.close();
-    cout.close();
     return 0;
 }

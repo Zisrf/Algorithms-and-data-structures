@@ -32,8 +32,6 @@ int main()
  
     for (int i = 0; i < n; ++i)
         cout << h(r[i], k, l, r) - h(l[i], k, l, r) << endl;
- 
-    cin.close();
-    cout.close();
+        
     return 0;
 }

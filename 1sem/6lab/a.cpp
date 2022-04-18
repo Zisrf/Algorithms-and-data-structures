@@ -37,7 +37,5 @@ int main()
 
     cout << maxH << endl;
 
-    cin.close();
-    cout.close();
     return 0;
 }

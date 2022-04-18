@@ -44,7 +44,5 @@ int main()
 
     cout << "YES" << endl;
 
-    cin.close();
-    cout.close();
     return 0;
 }

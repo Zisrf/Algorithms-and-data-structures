@@ -42,7 +42,5 @@ int main()
     else
         cout << "Second player wins" << endl;
 
-    cin.close();
-    cout.close();
     return 0;
 }

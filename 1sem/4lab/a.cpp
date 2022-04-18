@@ -59,7 +59,5 @@ int main()
     }
 
     free(st.arr);
-    cin.close();
-    cout.close();
     return 0;
 }

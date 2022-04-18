@@ -94,8 +94,6 @@ int main()
         }
     reverse(ans.begin(), ans.end());
     cout << ans << endl;
- 
-    cin.close();
-    cout.close();
+    
     return 0;
 }

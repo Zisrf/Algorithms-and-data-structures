@@ -40,5 +40,6 @@ int main()
     cout << nums[0].second + 1 << ' ';
     cout << nums[n / 2].second + 1 << ' ';
     cout << nums[n - 1].second + 1 << endl;
+    
     return 0;
 }

@@ -10,21 +10,18 @@ int main()
  
     int n, m;
     cin >> n >> m;
- 
-    vector<vector<bool>> g(n, vector<bool>(n, false));
+    vector<int> powers(n);
     for (int i = 0; i < m; ++i)
     {
         int u, v;
         cin >> u >> v;
-        g[u - 1][v - 1] = true;
+        ++powers[u - 1];
+        ++powers[v - 1];
     }
  
     for (int i = 0; i < n; ++i)
-    {
-        for (int j = 0; j < n ; ++j)
-            cout << g[i][j] << ' ';
-        cout << endl;
-    }
-    
+        cout << powers[i] << ' ';
+    cout << endl;
+ 
     return 0;
 }

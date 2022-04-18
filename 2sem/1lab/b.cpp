@@ -33,8 +33,6 @@ int main()
         cout << "YES" << endl;
     else
         cout << "NO" << endl;
- 
-    cin.close();
-    cout.close();
+        
     return 0;
 }

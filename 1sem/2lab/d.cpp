@@ -23,7 +23,5 @@ int main()
         cout << a[i] << ' ';
     cout << endl;
 
-    cin.close();
-    cout.close();
     return 0;
 }

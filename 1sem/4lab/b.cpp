@@ -91,7 +91,5 @@ int main()
         }
     }
 
-    cin.close();
-    cout.close();
     return 0;
 }

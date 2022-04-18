@@ -142,7 +142,5 @@ int main()
         ++i;
     }
 
-    cin.close();
-    cout.close();
     return 0;
 }

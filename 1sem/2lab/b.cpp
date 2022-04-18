@@ -70,7 +70,5 @@ int main()
         cout << members[i].name << '\n';
     }
 
-    cin.close();
-    cout.close();
     return 0;
 }

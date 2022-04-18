@@ -27,5 +27,6 @@ int main()
             dp[i][j] = max(dp[i + 1][j], dp[i][j - 1]) + cost[i][j];
 
     fout << dp[0][w - 1] << endl;
+    
     return 0;
 }

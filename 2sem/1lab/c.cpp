@@ -31,8 +31,6 @@ int main()
     }
  
     cout << "NO" << endl;
- 
-    cin.close();
-    cout.close();
+    
     return 0;
 }
