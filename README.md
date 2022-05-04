@@ -1,7 +1,7 @@
 ## My laboratory works on algorithms and DS at [ITMO University](https://itmo.ru)
 ### Semester 2
 * Hashing, prefix function, Knuth-Morris-Pratt automaton
-* [Dynamic programming](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/4lab)
+* [Dynamic programming](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/5lab)
 * [Dijkstra's, Floyd's and Ford-Bellman's algorithms](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/4lab)
 * [Minimum spanning trees](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/3lab)
 * [DFS, topological sort](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/2lab)
