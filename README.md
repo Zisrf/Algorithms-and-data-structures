@@ -7,7 +7,6 @@
 * [DFS, topological sort](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/2lab)
 * [Graph storage, BFS](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/2sem/1lab)
 ### Semester 1
-* [AVL tree](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/1sem/7lab)
 * [Unbalanced binary search tree](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/1sem/6lab)
 * [Hash table, unordered set, unordered map](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/1sem/5lab)
 * [Stack, queue, list, вinary search](https://github.com/ZISRF/Algorithms-and-data-structures/tree/master/1sem/4lab)
